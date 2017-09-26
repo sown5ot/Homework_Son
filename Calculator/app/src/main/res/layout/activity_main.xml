@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sonhoang.vn.calculator.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="25 x 32"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:padding="@dimen/margin_default"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="800"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:padding="@dimen/margin_default"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextWhite"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button"
+                android:layout_weight="1"
+                android:text="/"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextWhite"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button"
+                android:layout_weight="1"
+                android:text="x"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextWhite"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <ImageButton
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_red"
+                android:layout_weight="1"
+                android:src="@drawable/ic_backspace_black_24dp"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button_white"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorTextBlack"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <TextView
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:background="@drawable/circle_button"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="@dimen/circle_size"
+                        android:layout_height="@dimen/circle_size"
+                        android:background="@drawable/circle_button_white"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorTextBlack"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_default"/>
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        android:layout_width="@dimen/circle_size"
+                        android:layout_height="@dimen/circle_size"
+                        android:background="@drawable/circle_button_white"
+                        android:layout_weight="1"
+                        android:text="2"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorTextBlack"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_default"/>
+
+                    <TextView
+                        android:layout_width="@dimen/circle_size"
+                        android:layout_height="@dimen/circle_size"
+                        android:background="@drawable/circle_button_white"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorTextBlack"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="@dimen/double_circle_size"
+                        android:layout_height="@dimen/circle_size"
+                        android:background="@drawable/rounded_shape_white"
+                        android:layout_weight="2"
+                        android:text="0"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorTextBlack"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_default" />
+
+                    <TextView
+                        android:layout_width="@dimen/circle_size"
+                        android:layout_height="@dimen/circle_size"
+                        android:background="@drawable/circle_button_white"
+                        android:layout_weight="1"
+                        android:text="."
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/colorTextBlack"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_equal"
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/double_circle_size"
+                android:background="@drawable/rounded_shape"
+                android:layout_weight="1"
+                android:text="="
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
