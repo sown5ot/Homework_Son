@@ -1,5 +1,6 @@
 package sonhoang.vn.notebook;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,10 @@ public class TakeNote extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveNote();
+                ivCheck.setClickable(false);
+
+                Intent intent = new Intent(TakeNote.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
