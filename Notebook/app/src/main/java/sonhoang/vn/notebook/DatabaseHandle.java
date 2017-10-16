@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,12 +40,13 @@ public class DatabaseHandle {
 
         while (!cursor.isAfterLast()){
             //get data
+            int id = cursor.getInt(0);
             String title = cursor.getString(1);
             String content = cursor.getString(2);
 
             Log.d(TAG, "getNoteList: " + title.toString());
 
-            NoteContent noteContent = new NoteContent(title, content);
+            NoteContent noteContent = new NoteContent(id, title, content);
             noteContents.add(noteContent);
 
             //move next
@@ -60,5 +62,20 @@ public class DatabaseHandle {
         String insertQuery = "insert into tbl_note(title, content) values ('" + title + "', '"+ content + "')";
         sqLiteDatabase.execSQL(insertQuery);
         Log.d(TAG, "saveNote: saved");
+    }
+
+    public void deleteNote(String title){
+        sqLiteDatabase = openHelper.getWritableDatabase();
+        String deleteQuery = "delete from tbl_note where title = '" + title + "'";
+        sqLiteDatabase.execSQL(deleteQuery);
+        Log.d(TAG, "deleteNote: deleted");
+    }
+
+
+    public void editNote(int id, String title, String content) {
+        sqLiteDatabase = openHelper.getWritableDatabase();
+        String editQuery = "update tbl_note set title = '" + title + "', content = '" + content +"' where id = " + id;
+        sqLiteDatabase.execSQL(editQuery);
+        Log.d(TAG, "editNote: edited");
     }
 }
