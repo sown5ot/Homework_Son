@@ -35,7 +35,7 @@ public class DatabaseHandle {
     public List<NoteContent> getNoteList(){
         List<NoteContent> noteContents = new ArrayList<>();
         sqLiteDatabase = openHelper.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("select * from tbl_note", null);
+        Cursor cursor = sqLiteDatabase.rawQuery("select * from tbl_note order by id desc", null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
