@@ -9,10 +9,16 @@ import retrofit2.http.Query;
  */
 
 public interface GetWeatherInterface {
-    String APPID_KEY = "03bef65d95fc17708280c7cff950eeca";
+
     @GET("weather")
-    Call<GetWeatherResponseJSON> getWeather(
-            @Query("q") String location,
-            @Query("APPID") String APPID
+    Call<GetWeatherResponseJSON> getWeatherToday(
+            @Query(GetWeatherStringQuery.location) String location,
+            @Query(GetWeatherStringQuery.APPID) String appID
+    );
+
+    @GET("forecast")
+    Call<GetWeatherResponseJSON> getWeatherForecast(
+            @Query(GetWeatherStringQuery.location) String location,
+            @Query(GetWeatherStringQuery.APPID) String appID
     );
 }

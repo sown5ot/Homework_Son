@@ -8,10 +8,17 @@ import java.util.List;
 
 class GetWeatherResponseJSON {
     List<WeatherObj> weather;
+    List<WeatherForecastObj> list;
 
     class WeatherObj{
         String id;
         String main;
         String description;
+        String icon;
+    }
+
+    class WeatherForecastObj{
+        String dt;
+        List<WeatherObj> weather;
     }
 }
